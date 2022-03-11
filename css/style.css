@@ -227,10 +227,6 @@ button {
 
 /*------------benefits-------------*/
 
-.container-benefits {
-	margin: 95px 0;
-}
-
 .benefits-benefit {
 	display: flex;
 	justify-content: space-between;
@@ -266,10 +262,6 @@ button {
 .devices-photos {
 	display: flex;
 	justify-content: space-between;
-}
-
-.devices-devices {
-	margin-bottom: 95px;
 }
 
 /*--------------team---------------*/
