@@ -109,6 +109,7 @@ button {
 .container {
 	max-width: 1200px;
 	margin: 0 auto;
+	padding: 0 15px;
 }
 
 .section {
@@ -119,7 +120,7 @@ button {
 
 .container-header {
 	display: flex;
-	margin: 37px 0;
+	padding: 24px 0;
 	align-items: center;
 }
 
@@ -159,7 +160,8 @@ button {
 }
 
 .list-item:hover,
-:focus {
+:active {
+	background-color: var(--white);
 	color: var(--blue);
 }
 
@@ -182,17 +184,23 @@ button {
 .header-email:hover,
 :focus {
 	color: var(--blue);
+	background-color: var(--white);
 }
 
 .header-tel:hover,
 :focus {
 	color: var(--blue);
+	background-color: var(--white);
 }
 
 /*--------------hero---------------*/
 
 .hero {
 	background: var(--bg);
+}
+
+.section-hero {
+	padding: 200px 0;
 }
 
 .hero-title {
@@ -203,7 +211,6 @@ button {
 	line-height: 1.36;
 	text-align: center;
 	letter-spacing: 0.06em;
-	padding-top: 200px;
 	margin-bottom: 30px;
 }
 
@@ -220,7 +227,6 @@ button {
 	font-weight: 700;
 	line-height: 1.87;
 	letter-spacing: 0.06em;
-	margin-bottom: 200px;
 	padding: 10px 30px;
 	border-radius: 4px;
 }
@@ -230,6 +236,10 @@ button {
 .benefits-benefit {
 	display: flex;
 	justify-content: space-between;
+}
+
+.section-benefits {
+	padding-top: 94px;
 }
 
 .benefit {
@@ -272,10 +282,9 @@ button {
 
 .team-workers {
 	display: flex;
-	justify-content: space-between;
 	text-align: center;
-	padding-bottom: 95px;
 }
+
 .team-workers > li {
 	background: #fff;
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -288,14 +297,20 @@ button {
 	text-align: center;
 	line-height: 1.16;
 	margin-bottom: 60px;
-	padding-top: 95px;
+}
+
+.worker:not(:last-child) {
+	margin-right: 30px;
+}
+
+.workers-div {
+	padding: 30px 0px;
 }
 
 .worker-name {
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.18;
-	margin-top: 30px;
 	margin-bottom: 10px;
 }
 
@@ -303,16 +318,12 @@ button {
 	font-size: 16px;
 	color: var(--grey);
 	line-height: 1.18;
-	padding-bottom: 30px;
 }
 
 /*-------------footer--------------*/
 
 .footer {
 	background-color: var(--bg);
-}
-
-.footer-block {
 	padding: 60px 0;
 }
 
@@ -396,7 +407,6 @@ button {
 }
 
 .shop-item {
-	border-bottom: 1px solid #eeeeee;
 	margin-bottom: 30px;
 }
 
@@ -406,8 +416,13 @@ button {
 	line-height: 2;
 	color: #212121;
 	letter-spacing: 0.06em;
-	margin-top: 25px;
 	margin-bottom: 15px;
+}
+
+.item-div {
+	padding-top: 25px;
+	padding-bottom: 30px;
+	border: 1px solid #eeeeee;
 }
 
 .item-text {
@@ -415,5 +430,4 @@ button {
 	line-height: 1.9;
 	color: var(--grey);
 	line-height: 1.87;
-	margin-bottom: 30px;
 }
